@@ -1,0 +1,5 @@
+{
+    "image_prompt_template": "Generate a photorealistic training still for {{scene_id}} about {{goal}}. Environment: {{visual_brief}}. Show compliance with {{standards_tags}}.",
+    "video_prompt_template": "Create an 8-second safety training clip combining scenes {{scene_ids}} focusing on {{goal}}. Style: professional, realistic lighting, clear PPE."
+  }
+  

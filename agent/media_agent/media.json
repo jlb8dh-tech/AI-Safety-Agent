@@ -1,0 +1,32 @@
+{
+  "images": [
+    {
+      "scene_id": "S1_intro",
+      "file": "img/S1_intro.jpg",
+      "alt": "Introduce warehouse environment (training visual)",
+      "caption": "Introduce warehouse environment"
+    },
+    {
+      "scene_id": "S2_hazard",
+      "file": "img/S2_hazard.jpg",
+      "alt": "Show blind spot hazard (training visual)",
+      "caption": "Show blind spot hazard"
+    },
+    {
+      "scene_id": "S3_control",
+      "file": "img/S3_control.jpg",
+      "alt": "Demonstrate safe spotter use (training visual)",
+      "caption": "Demonstrate safe spotter use"
+    }
+  ],
+  "video": {
+    "scene_ids": [
+      "S1_intro",
+      "S2_hazard",
+      "S3_control"
+    ],
+    "file": "video/forklift_demo_8s.mp4",
+    "duration": 8,
+    "caption": "Use a spotter when reversing."
+  }
+}

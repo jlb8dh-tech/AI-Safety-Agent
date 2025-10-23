@@ -1,0 +1,24 @@
+{
+    "scenes": [
+      {
+        "scene_id": "S1_intro",
+        "goal": "Introduce the warehouse environment and why backing is risky.",
+        "visual_brief": "Wide shot of indoor warehouse, forklift reversing slowly with warning lights.",
+        "script_ref": "intro",
+        "standards_tags": ["OSHA 1910.178(n)(6)"]
+      },
+      {
+        "scene_id": "S2_hazard",
+        "goal": "Show what can go wrong without a spotter.",
+        "visual_brief": "Forklift backing near pedestrian walkway; blind spot highlighted.",
+        "script_ref": "hazard"
+      },
+      {
+        "scene_id": "S3_control",
+        "goal": "Show correct spotter use and safe distance.",
+        "visual_brief": "Spotter guiding forklift using hand signals; clear markings on floor.",
+        "script_ref": "controls"
+      }
+    ]
+  }
+  
