@@ -12,7 +12,7 @@ except KeyError:
     print("ERROR: Something went wrong with the API Key.\n")
     exit()
 
-model = genai.GenerativeModel('models/gemini-pro-latest')
+model = genai.GenerativeModel('mdels/gemini-pro-latest')
 
 # configures the style of the output from Gemini. I can tweak these settings
 generation_config = genai.GenerationConfig(
