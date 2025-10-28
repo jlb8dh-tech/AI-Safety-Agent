@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs and data
+logs/
+data/*.json
+data/*.db
+*.log
+
+# Exports (keep directory, ignore content)
+exports/*.yaml
+exports/*.json
+examples_output/*.yaml
+examples_output/*.json
+forklift_training_output/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test coverage
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Build
+build/
+dist/
+*.egg-info/

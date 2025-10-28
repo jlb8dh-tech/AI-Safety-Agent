@@ -1,0 +1,91 @@
+# Configuration for Black Unicorn Agent
+
+# Outline Pipeline Configuration
+outline_pipeline:
+  max_prerequisites: 5
+  complexity_progression: true
+  duration_threshold: 120  # minutes
+  clustering_threshold: 0.7
+  validation:
+    strict_mode: false
+    check_circular_dependencies: true
+    validate_complexity_progression: true
+
+# Standards Lookup Pipeline Configuration
+standards_lookup:
+  update_interval_hours: 24
+  max_concurrent_requests: 10
+  timeout_seconds: 30
+  retry_attempts: 3
+  sources:
+    federal_register:
+      enabled: true
+      api_url: "https://api.federalregister.gov/v1/documents.json"
+      rate_limit: 1000
+    eu_legislation:
+      enabled: true
+      api_url: "https://eur-lex.europa.eu/api/"
+      rate_limit: 500
+    local_cache:
+      enabled: true
+      cache_path: "data/standards_cache.json"
+
+# Data Flows Configuration
+data_flows:
+  max_concurrent_executions: 5
+  default_timeout: 300  # seconds
+  validation:
+    input_validation: true
+    output_validation: true
+    schema_validation: false
+  logging:
+    log_level: "INFO"
+    log_executions: true
+    log_performance: true
+
+# Agent Workflow Configuration
+agent_workflows:
+  pipeline_integration:
+    outline_to_standards: true
+    standards_to_outline: true
+    data_flow_orchestration: true
+  error_handling:
+    retry_failed_flows: true
+    max_retries: 3
+    fallback_strategies: true
+  monitoring:
+    enable_metrics: true
+    enable_tracing: true
+    alert_thresholds:
+      error_rate: 0.1
+      execution_time: 60  # seconds
+
+# Database Configuration (if needed)
+database:
+  type: "sqlite"  # or "postgresql", "mysql"
+  connection_string: "sqlite:///agent.db"
+  pool_size: 5
+  max_overflow: 10
+
+# Logging Configuration
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  handlers:
+    console:
+      enabled: true
+    file:
+      enabled: true
+      path: "logs/agent.log"
+      max_size: "10MB"
+      backup_count: 5
+
+# API Configuration (if exposing REST API)
+api:
+  enabled: false
+  host: "0.0.0.0"
+  port: 8000
+  cors_origins: ["*"]
+  rate_limiting:
+    enabled: true
+    requests_per_minute: 100
