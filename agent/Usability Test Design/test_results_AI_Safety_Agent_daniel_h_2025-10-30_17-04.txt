@@ -1,0 +1,26 @@
+Test Session: AI_Safety_Agent
+Tester ID: daniel_h
+Date/Time: 2025-10-30_17-04
+
+--- SCENARIO ---
+You are a new safety manager at a manufacturing plant. Your goal is to use the 'AI Safety Agent' to review a training module you've built to make sure it's safe and compliant before you send it to new hires.
+
+--- OBSERVATIONS ---
+Task 1: Task 1 (Navigation/Goal Clarity): You have just opened the application. Find the button or link to start a new safety review and begin the process.
+Observer Notes: tester is doing exactly what they should be doing
+--------------------
+Task 2: Task 2 (Completion Flow): Upload the attached 'Forklift_Safety_Module.docx' file to be analyzed by the AI.
+Observer Notes: none
+--------------------
+Task 3: Task 3 (Feedback Clarity): The AI has finished its review and has flagged 3 potential issues. Find the first issue and read the AI's feedback. What is it telling you to do?
+Observer Notes: none
+--------------------
+Task 4: Task 4 (Feedback Clarity): The AI has flagged a step as 'High-Risk.' Find out *why* it's considered high-risk and see if it provides an OSHA reference.
+Observer Notes: 
+--------------------
+Task 5: Task 5 (Ease of Use): Accept the AI's suggestion for the first issue, but 'ignore' the suggestion for the second issue.
+Observer Notes: 
+--------------------
+Task 6: Task 6 (Completion Flow): Now that you have reviewed the feedback, find out how to approve the document and export the final, compliant version.
+Observer Notes: 
+--------------------
