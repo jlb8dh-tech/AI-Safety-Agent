@@ -1,0 +1,112 @@
+{
+  "safety_categories": {
+    "hazard_identification": {
+      "keywords": ["hazard", "danger", "risk", "unsafe", "warning", "caution"],
+      "description": "Content showing hazards or dangerous situations"
+    },
+    "control_measures": {
+      "keywords": ["control", "safety measure", "protection", "prevention", "mitigation"],
+      "description": "Content demonstrating safety controls and protective measures"
+    },
+    "ppe_usage": {
+      "keywords": ["ppe", "personal protective equipment", "helmet", "safety vest", "gloves", "goggles"],
+      "description": "Content about personal protective equipment usage"
+    },
+    "procedures": {
+      "keywords": ["procedure", "protocol", "process", "steps", "method", "guideline"],
+      "description": "Content explaining safety procedures and protocols"
+    },
+    "emergency_response": {
+      "keywords": ["emergency", "evacuation", "first aid", "rescue", "response"],
+      "description": "Content about emergency response procedures"
+    },
+    "training_demonstration": {
+      "keywords": ["training", "demonstration", "demo", "example", "showcase"],
+      "description": "Training demonstration content"
+    },
+    "compliance": {
+      "keywords": ["compliance", "regulation", "standard", "osha", "niosh", "ansi"],
+      "description": "Content related to regulatory compliance"
+    },
+    "awareness": {
+      "keywords": ["awareness", "education", "informational", "aware", "knowledge"],
+      "description": "Safety awareness and educational content"
+    }
+  },
+  "hazard_types": {
+    "blind_spot": {
+      "keywords": ["blind spot", "blindspot", "visibility", "unseen", "hidden"],
+      "description": "Blind spot hazards"
+    },
+    "striking": {
+      "keywords": ["striking", "impact", "collision", "hit", "struck"],
+      "description": "Striking and impact hazards"
+    },
+    "falling": {
+      "keywords": ["fall", "falling", "height", "elevation", "drop"],
+      "description": "Fall hazards"
+    },
+    "electrical": {
+      "keywords": ["electrical", "electric", "voltage", "current", "shock"],
+      "description": "Electrical hazards"
+    },
+    "chemical": {
+      "keywords": ["chemical", "hazardous material", "hazmat", "toxic", "exposure"],
+      "description": "Chemical hazards"
+    },
+    "fire": {
+      "keywords": ["fire", "flame", "combustion", "burn", "ignition"],
+      "description": "Fire hazards"
+    },
+    "ergonomic": {
+      "keywords": ["ergonomic", "posture", "repetitive", "strain", "musculoskeletal"],
+      "description": "Ergonomic hazards"
+    },
+    "noise": {
+      "keywords": ["noise", "hearing", "decibel", "sound", "acoustic"],
+      "description": "Noise hazards"
+    },
+    "machine_operation": {
+      "keywords": ["machine", "equipment", "machinery", "operation", "mechanical"],
+      "description": "Machine operation hazards"
+    },
+    "vehicle_operation": {
+      "keywords": ["vehicle", "forklift", "truck", "driving", "vehicle operation"],
+      "description": "Vehicle operation hazards"
+    }
+  },
+  "standards_mapping": {
+    "OSHA": {
+      "patterns": ["osha", "1910", "1926", "29 cfr"],
+      "base_url": "https://www.osha.gov/laws-regs/regulations/standardnumber/"
+    },
+    "NIOSH": {
+      "patterns": ["niosh", "cdc/niosh"],
+      "base_url": "https://www.cdc.gov/niosh/"
+    },
+    "ANSI": {
+      "patterns": ["ansi", "american national standards institute"],
+      "base_url": "https://webstore.ansi.org/"
+    },
+    "ISO": {
+      "patterns": ["iso", "iso/iec"],
+      "base_url": "https://www.iso.org/"
+    }
+  },
+  "compliance_keywords": [
+    "osha compliant",
+    "niosh approved",
+    "ansi certified",
+    "regulatory compliance",
+    "safety standard",
+    "code compliant"
+  ],
+  "common_tags": {
+    "environment": ["warehouse", "construction", "manufacturing", "office", "outdoor", "indoor"],
+    "equipment": ["forklift", "crane", "ladder", "tool", "machine", "vehicle"],
+    "ppe": ["helmet", "vest", "gloves", "goggles", "boots", "hearing protection"],
+    "action": ["reversing", "lifting", "climbing", "operating", "guiding", "signaling"],
+    "personnel": ["operator", "spotter", "pedestrian", "worker", "supervisor"]
+  }
+}
+
